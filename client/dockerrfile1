@@ -1,0 +1,9 @@
+#Single Stage
+FROM node:18
+WORKDIR /app
+COPY . .
+RUN npm install
+RUN npm run build
+RUN np install -g http-server
+EXPOSE 80
+CMD ["http-server", "buila", "-p", "80"]
