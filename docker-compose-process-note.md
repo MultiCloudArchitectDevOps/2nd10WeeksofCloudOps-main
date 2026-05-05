@@ -73,8 +73,9 @@ mkdir -p ~/.docker/cli-plugins
 ✅ Step 3: Verify Buildx is now detected
 
 docker buildx version
-
+************************************************************************************************************************
 Install docker compose 
+
 mkdir -p ~/.docker/cli-plugins
 
 curl -L https://github.com/docker/buildx/releases/download/v0.17.1/buildx-v0.17.1.linux-amd64 \
@@ -88,10 +89,8 @@ curl -L https://github.com/docker/buildx/releases/download/v0.17.1/buildx-v0.17.
 
   docker buildx version
 docker-compose up -d
+*********************************************************************************************
 
 
-You should now see something like:
-
-github.com/docker/buildx v0.18.0
 -- then search the public-ip:84 port in broswer you will get the appliaction deployment then add the book
     --------------------------THANKYOU------------------------------------------------------------
