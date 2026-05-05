@@ -74,6 +74,21 @@ mkdir -p ~/.docker/cli-plugins
 
 docker buildx version
 
+Install docker compose 
+mkdir -p ~/.docker/cli-plugins
+
+curl -L https://github.com/docker/buildx/releases/download/v0.17.1/buildx-v0.17.1.linux-amd64 \
+  -o ~/.docker/cli-plugins/docker-buildx
+
+  chmod +x ~/.docker/cli-plugins/docker-buildx
+
+  file ~/.docker/cli-plugins/docker-buildx
+
+  systemctl restart docker
+
+  docker buildx version
+docker-compose up -d
+
 
 You should now see something like:
 
